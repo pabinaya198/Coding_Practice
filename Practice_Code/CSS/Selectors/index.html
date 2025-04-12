@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All Selectors</title>
+</head>
+<body>
+
+    <div class="main-container">
+    <h1>This are the 4 - way to selecting the element </h1>
+        <h2>1. Selectors</h2>  
+        <h2>2. Combinators</h2>  
+        <h2>3. Pseudo-elements</h2>  
+        <h2>4. Pseudo-classes</h2>  
+
+    </div>
+<hr> 
+                        <!-- 1. Selectors -->
+    <div >
+        <h1>1. Selectors</h1>  
+
+        <!--3.class Selector -->
+         <p class="para-one">3. class selectors used </p>
+
+         <!-- 4. Id Selector  -->
+         <p id="para-two">4. Id selectors used </p>
+
+        <!-- 5. Specific Selector -->
+         <p class="para-three">5. Specific Class Selector</p>
+         <h2 class="para-three">5. Specific Class Selector</h2>
+
+        <!-- 6. Grouping Selector -->
+         <p class="group-para1">6. Grouping Selector</p>
+         <p class="group-para2">6. Grouping Selector</p>
+         <p class="group-para3">6. Grouping Selector</p>
+    </div>
+
+    <hr>
+
+
+
+
+    
+                    <!-- 2. Combinators -->
+                    <h1>2. Combinators</h1>
+
+<div class="combinator-class">
+
+<!-- 1. Decendent Selector -->
+            <p>1. Decendent <b>Selector</b></p>
+
+<!-- 2. Child Selector  -->
+        <div class="child-container">
+
+             <p>2. Child 1 Selector</p>
+
+             <div class="child-container2">
+
+                 <p>2. child 2 Selector</p>
+
+             </div>
+
+         </div>  
+
+<!-- 3. Adjecent Sibling Selector -->
+    <p>3. Adjecent Sibling Selector</p>
+
+<!--  4. General Sibling Selector   ( ~ )  -->
+   <h3>4. General Sibling Selector</h3>
+   <p>4. General Sibling Selector</p>
+   <h3>4. General Sibling Selector</h3>
+
+</div>
+<hr>
+
+
+                    <!-- 3. Pseudo Element -->
+                    <h1>3. Pseudo Element</h1>  
+
+<div class="pseudo-element">
+ <!-- 1. ::first-line -->
+    <p class="para1">1. ::first-line   -- block level element only working, Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex, nihil voluptatibus corporis eos dolorum inventore maxime deleniti vero alias harum ad ducimus laboriosam error. Minima voluptatum iure explicabo ipsum.  </p>
+
+<!-- 2. ::first-letter -->
+      <p class="para2">2. ::first-letter </p>
+
+<!--3. Multiple Psudo element-->
+    <p class="para3">3. Multiple Psudo element, Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure est nobis, obcaecati tenetur quas maiores beatae. Laudantium neque, ut tempora id, beatae blanditiis delectus natus provident voluptatibus suscipit tempore.</p>
+    
+<!--4. ::before & ::after -->
+
+<p class="para4">and</p>
+<p class="para5">Total Price : <span>500</span></p>
+    
+<!--5. ::marker  -->
+    <div class="Marker-pseudo-element">
+        <p class="para6">5. ::marker element</p>
+
+
+        <ul class="Unorder-list">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>PinaApple</li>
+        </ul>
+
+        <ol class="Order-list">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>PinaApple</li>
+        </ol>
+
+        <h3 class="list">list h3</h3>
+        <h3 class="list">list h3 </h3>
+        <h3 class="list">list h3 </h3>
+        <h3 class="list">list h3 </h3>
+    </div>
+
+</div>
+
+<!--6. ::selection Pseudo element-->
+
+<p  class="para6">6. ::selection Pseudo element</p>
+
+<p class="para7">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum animi illo saepe? Temporibus voluptatum ex in! Autem commodi dicta placeat debitis cupiditate rem, explicabo, consectetur rerum perferendis nobis quis corrupti?
+</p>
+
+
+<!--7. ::placeholer  selector-->
+
+<div class="para8-container">
+
+<p  class="para8">7. ::placeholder Pseudo element</p>
+
+ <label for="">Name</label>
+<input type="text" placeholder="Enter your name ">
+
+</div>
+
+
+<hr>
+
+                   <!-- 4. Pseudo classes -->
+                    <h1>Pseudo classes</h1>
+
+<div class="pseudo-classes">
+
+<!--1. Attribute selector tag [Attribute name]  -->
+<p class="para-title">1. Attribute selector tag [Attribute name] <br></p>
+
+<p class="para9">
+    Lorem ipsum dolor sit amet <a href="" target="_blank">Visit now </a> adipisicing elit. Molestiae quia tenetur dolor ex iusto perspiciatis alias <a href="" class="parent" target="_parent">Read More</a>.
+</p>
+
+
+<!-- 2.Attribute selector tag [Attribute name = "value"] -->
+<p class="para-title">2.Attribute selector tag [Attribute name = "value"]</p>
+
+<input type="email" value="email" placeholder="Enter Email">
+ 
+
+<!-- 3. Attribute selector tag [attributename~="value"] -->
+<p class="para-title">3. Attribute selector tag [attributename~="value"]</p>
+
+<p class="title">P1</p>
+<p class="para11 titleColor ">P2</p> 
+<p class="para12 title orange">P3</p>
+<p class="para13 data title">P4</p>
+
+
+<!-- 4. Attribute selector tag [attributename^="value"] -->
+<p class="para-title"> 4. Attribute selector tag [attributename^="value"] </p>
+
+<p class="starting">P1</p>
+<p class="left-starting">P2</p> 
+<p class="starting right">P3</p>
+<p class="middle starting middle">P3</p>
+<p class="startingjoin">P4</p>
+
+
+<!-- 5. Attribute selector tag [attributename*="value"] -->
+<p class="para-title">5. Attribute selector tag [attributename*="value"] </p>
+
+<p class="hello">P1</p>
+<p class="left-hello">P2</p>
+<p class="hello right">P3</p>
+<p class="hellojoin">P4</p>
+
+<!-- 6. Attribute selector tag [attributename$="value"] -->
+ <p class="para-title">6. Attribute selector tag [attributename$="value"]</p>
+
+ <p class="ending">P1</p>
+ <p class="left-ending">P2</p>
+ <p class="ending-right">P3</p>
+ <p class="middle ending middle">P4</p>
+ <p class="joinending">P5</p>
+ 
+ <!-- 7. Attribute selector tag [attributename|="value"]  -->
+ <p class="para-title">7. Attribute selector tag [attributename|="value"] </p>
+ 
+<p class="text-next">P1</p>
+<p class="text">P1</p>
+<p class="next-text-one">P2</p>
+<p class="next-text">P3</p>
+  
+<hr>
+                                <!-- input Pseudo classes -->
+                                <h1>input pseudo-classes</h1>
+
+<!-- 8. :enabled & :disabled-->
+ <p class="para-title">8. :enabled & :disabled</p>
+ 
+<div  class="classEnable">    
+    <input type="text">  <!-- default enabled -->
+    <input type="text" disabled>
+</div>
+ 
+
+<!-- 9. :checked & not(:checked) -->
+<p class="para-title">9. :checked & not(:checked)</p>
+
+<input type="radio" name="gender" checked > 
+<label for="Male" >Male</label>
+<input type="radio" name="gender" >
+<label for="Female" >Female</label>
+
+
+<!-- 10. :placeholder-shown  -->
+<p class="para-title">10. :placeholder-shown</p>
+
+<textarea class="aboutbox" placeholder="Enter any value"></textarea>
+
+
+<!-- 12 :focus -->
+<p class="para-title">12. :focus</p>
+
+<input type="text" class="inputfocus" placeholder="click to focus">
+
+
+
+<!-- 13. :valid & :invalid -->
+<p class="para-title">12. :valid & :invalid</p>
+
+<input type="email" class="validation" placeholder="Enter email id" >
+
+
+
+<!-- 14 :required & :optional -->
+<p class="para-title">14. :required & :optional</p>
+
+<input type="text" placeholder="first name" class="required__input" required>
+<input type="text" placeholder="last name" class="optional__input">
+
+
+<!-- 15. :read-only & :read-write   -->
+<p class="para-title">15. :read-only & :read-write </p>
+
+<input type="text" class="read__only" placeholder="100.Rs" readonly>
+<input type="text" class="read__write" placeholder="120.Rs"  >
+
+
+<!-- 16. :in-range & :out-of-range  -->
+ <p class="para-title">16. :in-range & :out-of-range </p>
+
+ <input type="number"  min="1" max="10">
+
+
+<!-- 17. :default -->
+<p class="para-title">17. :default</p>
+
+<div class="default__inputs">
+<!-- checkbox -->
+ <input type="checkbox"  name="state" checked>
+ <label for="">Villupuram</label>
+
+ <input type="checkbox"  name="state"  >
+ <label for="">Chennai</label>
+<!-- radio -->
+ <input type="radio" name="state"  >
+ <label for="">Coimbature</label>
+
+ <input type="radio" name="state" checked>
+ <label for="">Madhuri</label>
+<!-- options -->
+ <div>
+    <select name="" id="">
+        <option value="opt">html</option>
+        <option value="opt">css</option>
+        <option value="opt">js</option>
+        <option value="opt" selected>react.js</option>
+    </select>
+ </div>
+
+</div>
+
+<hr> 
+                        <!-- User Action pseudo-classes -->
+                        <h1>User Action pseudo-classes</h1> 
+
+<!--18. :link, :hover, :visited, :active -->
+<p class="para-title">18. :link, :hover, :visited, :active</p>
+
+<a class="checking-link" href="https://google.com">Google</a>
+<a class="checking-link" href="https://youtube.com">YouTube</a> 
+<a class="checking-link" href="https://facebook.com">Facebook</a>
+<a class="checking-link" href="https://instagram.com">Instagram</a>
+ 
+
+<!-- 19. :target  -->
+ <p class="para-title">19. :target</p>
+
+
+<a href="#home" >Home</a> 
+<a href="#contact">contact</a> 
+<a href="#service">service</a> 
+
+<p id="home">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, minus?
+</p>
+<p id="contact">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, minus?
+</p>
+<p id="service">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, minus?
+</p>
+
+                        <!-- Structural pseudo-classes -->
+                        <h1>Structural pseudo-classes</h1>
+
+<!-- 20. :first-child & :last-child  -->
+ <p class="para-title">20. :first-child & :last-child</p>
+
+
+ <ul class="structural-unorder-list">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+ </ul>
+
+
+ 
+<!-- 21. :nth-child() & :nth-last-child()  -->
+ <p class="para-title">21. :nth-child() & :nth-last-child() </p>
+
+ <ol class="structural-order-list">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+ </ol> 
+ 
+<p class="para-title">:nth-child(2n)</p>
+ <ol class="structural-order-list2">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>D</li>
+    <li>D</li>
+ </ol> 
+
+
+
+ 
+ <p class="para-title">:nth-child(odd)</p>
+ <ol class="structural-order-list3">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+ </ol> 
+
+<!-- :nth-last-child() -->
+<p class="para-title">:nth-last-child() -- opposite to :nth-child()</p>
+
+<ol class="structural-order-list4">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+ </ol> 
+ 
+
+
+<!-- 22. :nth-of-type() & :nth-last-of-type()  -->
+<p class="para-title">22. :nth-of-type() & :nth-last-of-type()</p>
+
+<div class="structural-para-container">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <div>
+        <p>5 </p>
+    </div>
+
+</div>
+
+<!-- :nth-last-of-type() -->
+<p class="para-title">:nth-last-of-type</p>
+
+<div class="structural-para-container2">
+
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+
+    <div>
+        <p>5 </p>
+    </div>
+
+</div>
+
+
+
+<!--23 :only-child & :only-of-type -->
+<p class="para-title">23. :only-child & :only-of-type</p>
+
+<div class="structural-list-container">
+    
+<ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+ </ol> 
+<!-- only one child -->
+    <ol>
+        <li>Prasath</li>
+     </ol> 
+<!-- *** -->
+ <ol >
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+ </ol> 
+
+</div>
+
+<!-- :only-of-type -->
+ <p class="para-title">:only-of-type</p>
+<div class="structural-list-container2">
+
+<ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+ </ol> 
+<!-- only one child -->
+    <ol>
+        <li>Prasath</li>
+     </ol> 
+<!-- *** -->
+ <ol >
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+ </ol> 
+
+</div>
+
+<!--  24. :first-of-type & :last-of-type  -->
+<p class="para-title">24 :first-of-type & :last-of-type</p>
+
+<!-- first-child -->
+<p class="para-title">:first-child</p>
+<div class="structural-container3">
+
+  <p>para 1</p>
+ 
+ <div>
+    <p>para 2</p>
+ </div>
+
+ <p>para 3</p>
+
+</div>
+
+<!-- first-of-type -->
+<p class="para-title">:first-of-type</p>
+<div class="structural-container4">
+
+  <p>para 1</p>
+ 
+ <div>
+    <p>para 2</p>
+ </div>
+
+ <p>para 3</p>
+
+</div>
+
+<!-- last-of-type -->
+ <p class="para-title">:last-of-type</p>
+<div class="structural-container5">
+
+  <p>para 1</p>
+ 
+ <div>
+    <p>para 2</p>
+ </div>
+
+ <p>para 3</p>
+
+</div>
+
+
+<!-- ***** -->
+</div>
+
+
+</body>
+</html>
